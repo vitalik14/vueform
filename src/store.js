@@ -18,12 +18,15 @@ export default new Vuex.Store({
 		SET_STEP(state, step) {
 			state.step = step;
 		},
+
 		SET_TITLE(state, title) {
 			state.title = title;
 		},
+
 		ADD_USER_DATA(state, data) {
 			Object.assign(state.userData.user_data, data);
 		},
+
 		RESET_USER_DATA(state) {
 			state.userData.user_data = {};
 		}
@@ -35,7 +38,9 @@ export default new Vuex.Store({
 
 	getters: {
 		STEP: state => state.step,
+
 		TITLE: state => state.title,
-		USER_DATA: state => JSON.stringify(state.userData.user_data),
+
+		USER_DATA: state => JSON.stringify(state.userData.user_data)
 	},
 });
