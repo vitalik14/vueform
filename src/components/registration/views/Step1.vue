@@ -32,13 +32,13 @@ export default {
 
 	data() {
 		return {
-			email: 'dfsdfsf@df.df',
+			email: '',
 			emailText: '',
 			emailError: false,
-			password: '123456',
+			password: '',
 			passwordText: '',
 			passwordError: false,
-			passwordRepeat: '123456',
+			passwordRepeat: '',
 			passwordRepeatText: '',
 			passwordRepeatError: false
 		};

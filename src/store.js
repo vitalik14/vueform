@@ -7,7 +7,11 @@ export default new Vuex.Store({
 	state: {
 		step: 1,
 		title: '',
-		userData: {}
+		userData: {
+			user_data: {
+
+			}
+		}
 	},
 
 	mutations: {
@@ -18,10 +22,10 @@ export default new Vuex.Store({
 			state.title = title;
 		},
 		ADD_USER_DATA(state, data) {
-			Object.assign(state.userData, data);
+			Object.assign(state.userData.user_data, data);
 		},
 		RESET_USER_DATA(state) {
-			state.userData = {};
+			state.userData.user_data = {};
 		}
 	},
 
@@ -32,6 +36,6 @@ export default new Vuex.Store({
 	getters: {
 		STEP: state => state.step,
 		TITLE: state => state.title,
-		USER_DATA: state => JSON.stringify(state.userData),
+		USER_DATA: state => JSON.stringify(state.userData.user_data),
 	},
 });

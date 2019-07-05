@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.d33523a2e6867247919f4d4603e78ada.js"
+  "/precache-manifest.fbc04f61abe95b3cf5f07f8bb8b6ab8b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vueform"});
